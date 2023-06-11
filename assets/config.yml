@@ -1,0 +1,187 @@
+---
+title: "Dashboard"
+subtitle: "King of the Homer"
+logo: "logo.png"
+
+header: false
+# Self-Plug
+#footer: '<p>Theme made with <span class="has-text-danger">❤️</span> by <a href="https://github.com/tylerdotrar">tylerdotrar</a></p>' # Set false if you want to hide it.
+footer: false
+
+stylesheet:
+  - "assets/custom.css"
+
+message:
+  # No Searchbar
+  content: '<img src="assets/tools/strickland.png" style="margin-right:20px;">'
+  # DuckDuckGo Searchbar
+  #content: '<img src="assets/tools/strickland.png" style="margin-right:20px;"><iframe src="https://duckduckgo.com/search.html?prefill=Search DuckDuckGo&focus=yes&kz=1&kac=1&kn=1&kp=-2&k1=-1" style="overflow:hidden;margin:0;padding:0;width:calc(100% - 100px);height:35px;" frameborder="0"></iframe>'
+
+columns: "3" # You can change this to any number that is a factor of 12: (1, 2, 3, 4, 6, 12)
+theme: default
+colors:
+  # Option 1
+  light:
+    highlight-primary: "#fff5f2"
+    highlight-secondary: "#fff5f2"
+    highlight-hover: "#bebebe"
+    background: "#12152B"
+
+    # Item Backgrounds
+    card-background: "rgba(255, 245, 242, 0.8)" # Light
+    #card-background: "rgba(24, 28, 58, 0.8)" # Dark
+
+    # Header Names
+    #text: "#eaeaea" # White
+    text: "#1a1a1a" # Black
+    #text: "#c62b29" # Strickland Red
+
+    # Upper Right Icons
+    text-header: "#fafafa" # White
+    #text-header: "#7C71DD" # Purple
+    #text-header: "#c62b29" # Strickland Red
+
+    # Individual URL Titles
+    #text-title: "#fafafa" # White
+    text-title: "#000000" # Black
+    #text-title: "#c62b29" # Strickland Red
+
+    text-subtitle: "#111111"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#3273dc"
+    link-hover: "#2e4053"
+
+    # Background
+    background-image: "../assets/kingofthehill.jpg"
+    #background-image: "../assets/kingofthecursed.jpg"
+
+  # Option 2
+  dark:
+    highlight-primary: "#181C3A"
+    highlight-secondary: "#181C3A"
+    highlight-hover: "#1F2347"
+    background: "#12152B"
+
+    # Item Backgrounds
+    #card-background: "rgba(255, 245, 242, 0.8)" # Light
+    card-background: "rgba(24, 28, 58, 0.8)" # Dark
+
+    # Header Names
+    text: "#eaeaea" # White
+    #text: "#1a1a1a" # Black
+    #text: "#c62b29" # Strickland Red
+
+    # Upper Right Icons
+    #text-header: "#fafafa" # White
+    #text-header: "#7C71DD" # Purple
+    text-header: "#c62b29" # Strickland Red
+
+    # Individual URL Titles
+    text-title: "#fafafa" # White
+    #text-title: "#000000" # Black
+    #text-title: "#c62b29" # Strickland Red
+
+    text-subtitle: "#8B8D9C"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#c1c1c1"
+    link-hover: "#fafafa"
+
+    # Background
+    #background-image: "../assets/kingofthehill.jpg"
+    background-image: "../assets/kingofthecursed.jpg"
+
+services:
+  - name: "Infrastructure"
+    #icon: "fas fa-github"
+    logo: "assets/tools/propane.png"
+    items:
+      # Tagstyles provide different tag colors.
+      # | "is-primary" = green1 | "is-success" = green2 | "is-info" = blue | "is-danger" = red | "is-link" = purple | "is-warning = yellow |
+
+      # Target determines how a link is opened.
+      # | "_blank" = opens up a new tab | "_self" = opens up in current tab (default)
+
+      - name: "OPNsense"
+        #logo: "assets/tools/temp.png"
+        subtitle: "OPNsense | Open Source Firewall"
+        tag: "opnsense"
+        tagstyle: "is-primary"
+        url: "https://opnsense.org/"
+        # target: "_blank"
+      - name: "Proxmox"
+        #logo: "assets/tools/opnsense.png"
+        subtitle: "Proxmox VE | Open Source Hypervisor"
+        tag: "opnsense"
+        tagstyle: "is-primary"
+        url: "https://proxmox.com/"
+        # target: "_blank"
+
+  - name: "Services"
+    #icon: "fas fa-github"
+    logo: "assets/tools/propane.png"
+    items:
+      # Tagstyles provide different tag colors.
+      # | "is-primary" = green1 | "is-success" = green2 | "is-info" = blue | "is-danger" = red | "is-link" = purple | "is-warning = yellow |
+
+      # Target determines how a link is opened.
+      # | "_blank" = opens up a new tab | "_self" = opens up in current tab (default)
+
+      - name: "Security Onion"
+        #logo: "assets/tools/temp.png"
+        subtitle: "Security Onion | Open Source Security Monitoring Solution"
+        tag: "seconion"
+        tagstyle: "is-info"
+        url: "https://securityonionsolutions.com"
+        # target: "_blank"
+      - name: "Passbolt"
+        #logo: "assets/tools/temp.png"
+        subtitle: "Passbolt | Open Source Password Manager"
+        tag: "passbolt"
+        tagstyle: "is-info"
+        url: "https://passbolt.com"
+        # target: "_blank"
+      - name: "Pi-hole"
+        #logo: "assets/tools/temp.png"
+        subtitle: "Pi-hole | Open Source Ad-blocking DNS Server"
+        tag: "pihole"
+        tagstyle: "is-info"
+        url: "https://pi-hole.net/"
+        # target: "_blank"
+
+  - name: "External Resources"
+    #icon: "fas fa-github"
+    logo: "assets/tools/propane.png"
+    items:
+      # Tagstyles provide different tag colors.
+      # | "is-primary" = green1 | "is-success" = green2 | "is-info" = blue | "is-danger" = red | "is-link" = purple | "is-warning = yellow |
+
+      # Target determines how a link is opened.
+      # | "_blank" = opens up a new tab | "_self" = opens up in current tab (default)  
+      - name: "Github"
+        subtitle: "tylerdotrar | GitHub Profile"
+        #logo: "assets/tools/temp.png"
+        tag: "github"
+        tagstyle: "is-danger"
+        url: "https://www.github.com/tylerdotrar"
+        # target: "_blank"
+      - name: "ChatGPT"
+        subtitle: "ChatGPT | OpenAI Chatbot"
+        #logo: "assets/tools/temp.png"
+        tag: "chatgpt"
+        tagstyle: "is-danger"
+        url: "https://chat.openai.com"
+        # target: "_blank"
+      - name: "LabGopher"
+        #logo: "assets/tools/temp.png"
+        subtitle: "LabGopher | Ebay Server Scraper"
+        tag: "labgopher"
+        tagstyle: "is-danger"
+        url: "https://labgopher.com/"
+        # target: "_blank"
+      - name: "Hacknum-Opus"
+        #logo: "assets/tools/temp.png"
+        subtitle: "Bit-Bandits | Cybersecurity Knowledge Repository"
+        tag: "hacknumopus"
+        tagstyle: "is-danger"
+        url: "https://bit-bandits.com"
+        # target: "_blank"
