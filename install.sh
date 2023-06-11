@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Author: Tyler McCann (tylerdotrar)
-# Arbitrary Version Number: 1.0.0
+# Arbitrary Version Number: 1.0.1
 # Link: https://github.com/tylerdotrar/KingOfTheHomer
 
 ### Script Headers and Banners
@@ -54,8 +54,6 @@ cert_path='/etc/ssl/example.crt'
     echo -e -n "${yellow_prompt}HTTP Port: ${red_input}"
 	read server_port
   fi
-  
-  
 
   echo -e -n "\n${yellow_prompt}Accept above settings? (yes/no): ${red_input}"
   read accept_settings
@@ -81,12 +79,12 @@ wget https://github.com/bastienwirtz/homer/releases/latest/download/homer.zip &>
 mkdir /var/www/homer
 unzip homer.zip -d /var/www/homer &>/dev/null
 rm -rf homer.zip
-echo "[-] Homer dashboard installed."
+echo -e "\t  [-] Homer dashboard installed."
 
 git clone https://github.com/tylerdotrar/KingOfTheHomer &>/dev/null
 cp -rf KingOfTheHomer/assets /var/www/homer
 rm -rf KingOfTheHomer
-echo "[-] ${service} theme installed."
+echo -e "\t  [-] ${service} theme installed."
 echo -e "${green_notice}Complete."
 
 
@@ -114,7 +112,7 @@ echo -e "${green_notice}Complete."
 ### Ease of Use
 echo -e "\n${blue_start}Creating a 'config.yml' symbolic link for quick editing..."
 ln -s /var/www/homer/assets/config.yml ~/config_link.yml
-echo "[-] '$(echo ~)/config_link.yml' created."
+echo -e "\t  [-] '$(echo ~)/config_link.yml' created."
 echo -e "${green_notice}Complete."
 
 
